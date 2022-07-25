@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    height: 350%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,0.75)),url(https://images.unsplash.com/photo-1492138786289-d35ea832da43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* Second Background Image*/
+.bg {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+    left: 0%;
+    top: 141%;
+}
+/* Navbar section */
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: green;
+    font-size: 25px;
+    position: absolute;
+    top: 0%;
+    left: 14.5%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    top: 25px;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/* About Me Section */
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 60px;
+    text-shadow: 0 0 3vw #F40A35;
+    -webkit-animation: content h1 1s ease-in-out infinite alternate;
+    -moz-animation: content h1 1s ease-in-out infinite alternate;
+    animation: content h1 1s ease-in-out infinite alternate;
+    animation: glow 1.2s ease infinite;
+    -moz-animation: glow 1.2s ease infinite;
+    -webkit-animation: glow 1.2s ease infinite;
+}
+@keyframes glow {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+        0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+    50% {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+        0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }  
+.content p{
+    margin: 20px center;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 40px;
+    bottom: 0%;
+    left: 22%;
+    top: 150%;
+    position: absolute;
+}
+span {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+span.fade {
+    opacity: 1;
+    transform: translateY(50px);
+}
+
+/* My Projects / Work   */
+
+
+.projects1 {
+    position:absolute;
+    width:350px;
+    height:350px;
+    bottom:0px;
+    right:66%;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    top: 105%;
+}
+
+/* Project Text */
+.projects1 h1 {
+    position: absolute;
+    bottom: 10%;
+    left: 120%;
+    font-size: 80px;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 0 0 3vw #F40A35;
+    -webkit-animation: content h1 1s ease-in-out infinite alternate;
+    -moz-animation: content h1 1s ease-in-out infinite alternate;
+    animation: content h1 1s ease-in-out infinite alternate;
+    animation: glow 1.2s ease infinite;
+    -moz-animation: glow 1.2s ease infinite;
+    -webkit-animation: glow 1.2s ease infinite;
+}
+@keyframes glow {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+        0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+    50% {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+        0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }  
+.projects1 li a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    text-align: right;
+    text-decoration-color: green;
+}
+/* Weather App Section */
+.WeatherApp {
+    color: red;
+    position: absolute;
+    width:350px;
+    height:350px;
+    bottom:0px;
+    right:65%;
+    top: 150%;
+    text-transform: capitalize;
+    text-decoration: white;
+    font-size: 30px;
+    list-style: none;
+}
+.WeatherApp li a {
+    color: white;
+}
+.WeatherApp li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 314px;
+    transition: 0.5s;   
+}
+.WeatherApp li:hover::after {
+    width: 71%;
+}
+.WeatherApp p {
+    color: red;
+    position: absolute;
+    text-transform: capitalize;
+    text-decoration: white;
+    left: 15%;
+    top: 100%;
+    font-size: 30px;
+}
+.WeatherApp p a {
+    color: white;
+}
+.WeatherApp p::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    bottom: 314px;
+    transition: 0.5s;    
+}
+.WeatherApp p:hover::after {
+    width: 100%;
+}
+
+/* Calculator Section */
+.Calculator {
+    color: red;
+    position: absolute;
+    width:350px;
+    height:350px;
+    bottom:0px;
+    right:18%;
+    top: 150%;
+    text-transform: capitalize;
+    text-decoration: white;
+    font-size: 30px;
+    list-style: none;
+}
+.Calculator li a {
+    color: white;
+}
+.Calculator li:after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 314px;
+    transition: 0.5s;
+}
+.Calculator li:hover::after {
+    width: 36%;
+}
+.Calculator p {
+    color: green;
+    position: absolute;
+    text-transform: capitalize;
+    text-decoration: white;
+    left: -5%;
+    top: 100%;
+    font-size: 30px;
+}
+.Calculator p a {
+    color: white;
+}
+.Calculator p::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    bottom: 314px;
+    transition: 0.5s;
+}
+.Calculator p:hover::after {
+    width: 100%;
+}
+/* Browser Game Section */
+.gme {
+    color: red;
+    position: absolute;
+    width:350px;
+    height:350px;
+    bottom:0px;
+    right:63%;
+    top: 210%;
+    text-transform: capitalize;
+    text-decoration: white;
+    font-size: 30px;
+    list-style: none;
+}
+.gme li a {
+    color: white;
+}
+.gme li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 314px;
+    transition: 0.5s;
+}
+.gme li:hover::after {
+    width: 45%;
+}
+.gme p {
+    color: red;
+    position: absolute;
+    text-transform: capitalize;
+    text-decoration: white;
+    left: 5%;
+    top: 100%;
+    font-size: 30px;
+}
+.gme p a {
+    color: white;
+}
+.gme p::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    bottom: 314px;
+    transition: 0.5s;
+}
+.gme p:hover::after {
+    width: 100%;
+}
+/* To Do List Section */
+.list {
+    color: red;
+    position: absolute;
+    width:350px;
+    height:350px;
+    bottom:0px;
+    right:18%;
+    top: 210%;
+    text-transform: capitalize;
+    text-decoration: white;
+    font-size: 30px;
+    list-style: none;
+}
+.list li a {
+    color: white;
+}
+.list li:after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 314px;
+    transition: 0.5s;
+}
+.list li:hover::after {
+    width: 36%;
+}
+
+.list p {
+    color: green;
+    position: absolute;
+    text-transform: capitalize;
+    text-decoration: white;
+    left: -3%;
+    top: 100%;
+    font-size: 30px;
+}
+
+.list p a {
+    color: white;
+}
+.list p::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    bottom: 314px;
+    transition: 0.5s; 
+}
+.list p:hover::after {
+    width: 100%;
+}
+
+/* image section*/
+
+.weatherlogo {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom:0px;
+    right:68%;
+    top: 155%;  
+    border: 5px double black;
+}
+.game {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom:0px;
+    right:68%;
+    top: 215%;
+    border: 5px double black;
+}
+.tdl {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom:0px;
+    right:25%;
+    top: 215%;
+    border: 5px double black;
+}
+.cl {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom:0px;
+    right:25%;
+    top: 155%;
+    border: 5px double black;    
+}
+
+/*contact me*/
+
+.Contact {
+    width: 1905px;
+    height: 550px;
+    background: lightseagreen;
+    box-shadow: 0 0 20px 0 #999;
+    top: 321%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+form {
+    margin: 50px;
+}
+.input-field {
+    background-color: lightgray;
+    width: 1750px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+}
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+}
+.btn {
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.Contact h {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: -20%;
+    left: 45%;
+    bottom: 0%;
+    text-shadow: 0 0 3vw #F40A35;
+    -webkit-animation: Contact h  1s ease-in-out infinite alternate;
+    -moz-animation: Contact h  1s ease-in-out infinite alternate;
+    animation: Contact h  1s ease-in-out infinite alternate;
+    animation: glow 1.2s ease infinite;
+    -moz-animation: glow 1.2s ease infinite;
+    -webkit-animation: glow 1.2s ease infinite;
+}
+@keyframes glow {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+        0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+    50% {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+        0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* write span code for the buttons */
